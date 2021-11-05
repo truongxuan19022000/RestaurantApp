@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.TrangChu.MenuBar">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:background="#00C853"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize">
+
+                <ImageView
+                    android:id="@+id/imgthoat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/icon_find"
+                    android:padding="15dp"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageView
+                    android:id="@+id/imgtim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/icon_exit"
+                    android:padding="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Categories"
+                android:layout_marginTop="10dp"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:textAllCaps="true"
+                android:padding="10dp"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+                <RelativeLayout
+                    android:id="@+id/pho"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/round_bk2"
+                    >
+
+                    <TextView
+                        android:id="@+id/txtpho"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phở"
+                        android:textColor="@color/black"
+                        android:textSize="30sp"
+                        android:padding="25dp"
+                        />
+
+                </RelativeLayout>
+                <ImageView
+                    android:id="@+id/imgPho"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-40dp"
+                    app:srcCompat="@drawable/icon9" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/comrang"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/food_back"
+                >
+
+                <ImageView
+                    android:id="@+id/imgcomrang"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    app:srcCompat="@drawable/categories_restaurant_icon" />
+                <TextView
+                    android:id="@+id/txtComrang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cơm rang"
+                    android:layout_alignParentRight="true"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:textSize="30sp"
+                    android:padding="25dp"
+                    />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/misao"
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/round_bk5">
+
+                    <TextView
+                        android:id="@+id/txtMisao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="25dp"
+                        android:text="Mì sào"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="-20dp"
+                    app:srcCompat="@drawable/mihaohang" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/goithem"
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/round_bk3">
+                    <ImageView
+                        android:id="@+id/imggoithem"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="-20dp"
+                        app:srcCompat="@drawable/goithem" />
+                    <TextView
+                        android:id="@+id/txtgoithem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="25dp"
+                        android:text="Gọi Thêm"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="30sp" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:menu="@menu/menu_bottom"
+        app:itemIconTint="@color/color_custom"
+        app:itemBackground="@color/green"
+        app:itemTextColor="@color/color_custom"
+        />
+</RelativeLayout>

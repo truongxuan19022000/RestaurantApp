@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menuthem"
+        android:title="Thêm món ăn" />
+    <item
+        android:id="@+id/menusua"
+        android:title="Sửa món ăn" />
+    <item
+        android:id="@+id/goithemdo"
+        android:title="Gọi món đi kèm" />
+    <item
+        android:id="@+id/menuMon"
+        android:title="Gọi theo menu" />
+    <item
+        android:id="@+id/menudong"
+        android:title="Đóng ứng dụng" />
+</menu>

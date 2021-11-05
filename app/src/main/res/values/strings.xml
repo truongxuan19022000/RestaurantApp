@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Quản lý nhà hàng phở</string>
+    <string name="action_home">Home</string>
+    <string name="action_table">Bàn</string>
+    <string name="action_food">Order</string>
+    <string name="action_comment">Đánh giá</string>
+    <string-array name="array">
+        <item>Phở bò</item>
+        <item>Phở gà</item>
+        <item>Phở tái</item>
+        <item>Phở chín</item>
+        <item>Cơm dưa bò</item>
+        <item>Cơm cải bò</item>
+        <item>Cơm rang thập cẩm</item>
+        <item>Mì sào thập cẩm</item>
+        <item>Mì sào thượng hạng</item>
+        <item>Mì sào hải sản</item>
+
+    </string-array>
+</resources>

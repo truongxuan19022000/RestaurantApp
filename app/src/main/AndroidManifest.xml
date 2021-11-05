@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="Nhom4.com">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BaiTapLonAndroid">
+        <activity android:name=".Activity.TrangChu.MenuTable"></activity>
+        <activity android:name=".Activity.Report.InsertReport" /> <!-- TRang login -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activity.TrangChu.MenuBar" />
+        <activity android:name=".Activity.TrangChu.MenuCategory" /> <!-- Trang cua xuan -->
+        <activity android:name=".Activity.ThemTheoDanhmuc.AddFoodActivity" >
+
+        </activity> <!-- Trang Register -->
+        <activity android:name=".Activity.TrangChu.Register" /> <!-- Trang cua Sơn -->
+        <activity android:name=".Activity.GoiThem.MainActivityGT" /> <!-- Trang cua Tâm -->
+        <activity android:name=".Activity.OrderOnline.OrderOnlineActivity" /> <!-- Trang cua vân -->
+        <activity android:name=".Activity.Report.ReportActivity" /> <!-- Trang cua Anh bắc -->
+        <activity android:name=".Activity.OrderByTable.OrderTable"></activity>
+        <activity android:name=".Activity.TrangChu.MenuTable"
+            tools:ignore="DuplicateActivity"></activity>
+    </application>
+
+</manifest>

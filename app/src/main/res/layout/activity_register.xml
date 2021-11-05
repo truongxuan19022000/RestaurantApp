@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="10dp"
+    tools:context=".Activity.TrangChu.Register">
+
+    <TextView
+        android:paddingLeft="60dp"
+        android:textStyle="bold"
+        android:id="@+id/textView2"
+        android:layout_marginTop="100dp"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="Đăng ký thành viên" />
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="user name"
+        android:inputType=""
+        android:layout_marginTop="250dp"
+        android:text="" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_below="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Nhập mật khẩu"
+        android:layout_marginTop="50dp"
+        android:text="" />
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_below="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập lại mật khẩu"
+        android:inputType="textPassword"
+        android:layout_marginTop="50dp"
+        android:text="" />
+
+    <Button
+        android:id="@+id/btnSingup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/repassword"
+        android:text="Đăng ký" />
+
+</RelativeLayout>

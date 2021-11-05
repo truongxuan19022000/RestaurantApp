@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.GoiThem.MainActivityGT" >
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:menu="@menu/menu_bottom"
+        app:itemIconTint="@color/color_custom"
+        app:itemBackground="@color/green"
+        app:itemTextColor="@color/color_custom"
+        />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:gravity="center"
+        android:text="Gọi thêm (15k/1 món)"
+        android:textColor="#009"
+        android:textSize="25dp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+
+        <TableRow
+            android:id="@+id/TableRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/txtSoBan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/purple_200"
+                android:text="Danh mục bàn:"
+                android:textColor="#007"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spinBan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:background="#8000BCD4"
+                android:textSize="20dp"
+                android:textColor="#007"
+                android:id="@+id/txtDoUong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đồ uống:" />
+
+            <Spinner
+                android:id="@+id/spinDoUong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:background="#8000BCD4"
+                android:textSize="20dp"
+                android:textColor="#007"
+                android:id="@+id/txtSoLuongNuoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lượng:" />
+
+            <EditText
+                android:id="@+id/editSoLuongNuoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtDoAnKem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#8000BCD4"
+                android:text="Đồ ăn kèm:"
+                android:textColor="#007"
+                android:textSize="20dp" />
+
+            <Spinner
+                android:id="@+id/spinDoAnKem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtSoLuongDoAn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#8000BCD4"
+                android:text="Số lượng:"
+                android:textColor="#007"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editSoLuongDoAn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/TableRow6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:background="#8000BCD4"
+                android:textSize="20dp"
+                android:textColor="#007"
+                android:id="@+id/txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tiền gọi thêm:" />
+
+            <TextView
+                android:id="@+id/txtThanhTien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#70E91E1E"
+                android:text="" />
+
+        </TableRow>
+
+    </TableLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/LinearLayout1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="70dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnThem"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Thêm" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnTinh"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Tính tiền" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnSua"-->
+<!--                android:layout_width="70dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Sửa" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/btnDong"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="Đóng" />-->
+<!--        </LinearLayout>-->
+
+<!--    </LinearLayout>-->
+
+    <TextView
+        android:id="@+id/txtson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#B7FFEB3B"
+        android:gravity="center"
+        android:text="Danh sách đồ gọi thêm"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/txtTongTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8BC34A"
+        android:gravity="center"
+        android:text=""
+        android:textSize="25dp" />
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
